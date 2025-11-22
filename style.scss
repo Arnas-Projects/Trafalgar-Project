@@ -527,7 +527,7 @@ section.hero-5 {
 
 
 section.hero-6 {
-    margin: 10px auto 150px auto;
+    margin: 10px auto 25px auto;
     width: 100%;
     max-width: 1150px;
     position: relative;
@@ -586,6 +586,14 @@ section.hero-6 {
                 font-size: 16px;
             }
 
+            span {
+                transition: 0.3s ease-out;
+            }
+
+            span:hover {
+                transform: translateY(-4px) scale(1);
+            }
+
             a {
                 text-decoration: none;
                 font-size: 17px;
@@ -593,6 +601,7 @@ section.hero-6 {
                 color: $theme-color-blue;
                 font-weight: 600;
                 position: relative;
+                transition: 0.3s ease-out;
 
                 svg.arrow-right {
                     width: 17px;
@@ -639,5 +648,121 @@ section.hero-6 {
         top: 50px;
         right: -525px;
         z-index: -1;
+    }
+}
+
+
+//Section6 'Latest Article' ending
+
+
+//Footer 'Trafalgar' beginning
+
+footer {
+    width: 100%;
+    // max-width: 1600px;
+    margin: 175px auto 0px auto;
+    position: relative;
+
+    img.footer-bg {
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    div.footer-container {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        height: 432px;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        // padding-top: 80px;
+
+        img.dots-7 {
+            position: absolute;
+            bottom: 5px;
+            left: -220px;
+        }
+
+        img.dots-8 {
+            position: absolute;
+            z-index: -2;
+            top: -68px;
+            right: -135px;
+        }
+
+        div.trafalgar-foot-p {
+            display: flex;
+            flex-direction: column;
+            width: 391px;
+            // max-width: 350px;
+            gap: 30px;
+            color: $theme-color-white;
+
+            div.footer-ikona {
+                display: flex;
+
+                div.t-icon-footer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #5B9BF3;
+                    background-color: $theme-color-white;
+                    width: 41px;
+                    height: 41px;
+                    border-radius: 50%;
+                    text-align: center;
+                    font-size: 26px;
+                    font-weight: 700;
+                }
+
+                div.trafalgar-icon-footer {
+                    display: flex;
+                    align-items: center;
+                    font-size: 24px;
+                    font-weight: 600;
+                    padding-left: 12px;
+                }
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 1.8;
+            }
+        }
+
+        div.footer-listing {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            width: 660px;
+            height: 214px;
+
+            ul {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                li.footer-spicial-li {
+                    height: 41px;
+                    font-size: 20px;
+                    ;
+                }
+
+                li {
+                    font-size: 18px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $theme-color-white;
+                }
+            }
+        }
     }
 }
