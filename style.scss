@@ -30,7 +30,8 @@ $font-fam: "Mulish";
 }
 
 // body {
-//     background-color: $section-edit-color;
+//     // background-color: $section-edit-color;
+//     height: 100vh;
 // }
 
 // Header beginning
@@ -236,11 +237,12 @@ button.learn-more {
     cursor: pointer;
     display: block;
     margin: 50px auto;
-    padding: 10px 35px;
+    padding: 10px 50px;
     border: 2px solid $theme-color-blue;
     border-radius: 25px;
     background-color: $theme-color-white;
     color: $theme-color-blue;
+    font-size: 18px;
     font-weight: 800;
     transition: 0.2s ease-out;
 }
@@ -319,12 +321,13 @@ section.hero-3 {
         button {
             cursor: pointer;
             align-self: flex-start;
-            padding: 10px 35px;
+            padding: 10px 50px;
             border: 2px solid $theme-color-blue;
             border-radius: 25px;
             background-color: $theme-color-white;
             color: $theme-color-blue;
             font-weight: 800;
+            font-size: 18px;
             transition: 0.2s ease-out;
         }
 
@@ -387,20 +390,21 @@ section.hero-4 {
         button {
             cursor: pointer;
             align-self: flex-start;
-            padding: 10px 35px;
+            padding: 10px 65px 10px 50px;
             border: 2px solid $theme-color-blue;
             border-radius: 25px;
             background-color: $theme-color-white;
             color: $theme-color-blue;
             font-weight: 700;
+            font-size: 18px;
             transition: 0.2s ease-out;
             position: relative;
 
             svg {
-                width: 7px;
+                width: 10px;
                 position: absolute;
                 top: 14px;
-                right: 21px;
+                right: 40px;
                 transition: 0.2s ease-out;
             }
         }
@@ -419,7 +423,7 @@ section.hero-4 {
         }
     }
 
-        img.download-apps-img {
+    img.download-apps-img {
         width: 665px;
         transform: translateX(50px);
     }
@@ -431,7 +435,7 @@ section.hero-4 {
 //Section5 'Customer saying' beginning
 
 section.hero-5 {
-    margin: 200px auto 500px auto;
+    margin: 200px auto 150px auto;
     width: 100%;
     max-width: 1120px;
     position: relative;
@@ -445,7 +449,7 @@ section.hero-5 {
         text-align: center;
         color: $theme-color-white;
         font-size: 36px;
-        padding-top: 50px;
+        padding-top: 70px;
     }
 
     div.line-4 {
@@ -453,23 +457,187 @@ section.hero-5 {
         height: 2px;
         border-radius: 30px;
         background-color: $theme-color-white;
-        margin: 20px auto 50px auto;
+        margin: 35px auto 55px auto;
     }
 
     div.customer-say-div {
         display: flex;
-        justify-content: space-between;
-
-        div.customer-div{
-            display: flex;
-            flex-direction: column;
-        }
+        align-items: center;
+        width: 100%;
+        margin-bottom: 86px;
+        // column-gap: 100px;
 
         img.customer {
             width: 141px;
+            margin: auto 0 auto 100px;
         }
+
+        div.customer-div {
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+
+            p.customer-p-1 {
+                font-size: 22px;
+                font-weight: 700;
+                color: $theme-color-white;
+                padding-bottom: 7px;
+            }
+
+            p.customer-p-2 {
+                font-size: 18px;
+                color: $theme-color-white;
+                padding-bottom: 7px;
+            }
+        }
+
+        p.special {
+            margin: auto;
+            font-size: 19px;
+            color: $theme-color-white;
+        }
+
+    }
+
+    div.slider {
+        margin-top: 130px;
+        display: flex;
+        justify-content: center;
+        gap: 85px;
+    }
+
+    img.dots-4 {
+        position: absolute;
+        bottom: 130px;
+        left: -50px;
+        z-index: -3;
+    }
+
+    img.dots-5 {
+        position: absolute;
+        top: -15px;
+        right: -50px;
     }
 }
 
+//Section5 'Customer saying' ending
 
 
+//Section6 'Latest Article' beginning
+
+
+section.hero-6 {
+    margin: 10px auto 150px auto;
+    width: 100%;
+    max-width: 1150px;
+    position: relative;
+
+
+    h2 {
+        text-align: center;
+        font-size: 36px;
+    }
+
+    div.line-5 {
+        width: 56px;
+        height: 2px;
+        border-radius: 30px;
+        background-color: black;
+        margin: 25px auto;
+        align-items: center;
+    }
+
+    div.latest-article {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    div.article-column-div {
+        background-color: $theme-color-white;
+        display: flex;
+        flex-direction: column;
+        width: calc(33.3333% - 30px);
+        min-width: 350px;
+        height: 512px;
+        border-radius: 25px;
+        overflow: hidden;
+        margin: 10px;
+        box-shadow:
+            // 1px 3px 6px 3px #6a6a6a,
+            0px 18px 32px 28px #e5e9f67d;
+        // gap: 30px;
+        // padding: 15px;
+
+        div.article-column-text {
+            display: flex;
+            flex-direction: column;
+            height: 272px;
+            justify-content: space-evenly;
+            // gap: 15px;
+            padding: 0 30px;
+
+            h4 {
+                font-size: 21px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 17px;
+                padding-bottom: 10px;
+                color: $theme-color-blue;
+                font-weight: 600;
+                position: relative;
+
+                svg.arrow-right {
+                    width: 17px;
+                    position: absolute;
+                    top: 7px;
+                    right: -30px;
+                }
+            }
+        }
+    }
+
+    button.view-all {
+        cursor: pointer;
+        display: block;
+        margin: 50px auto;
+        padding: 10px 50px;
+        border: 2px solid $theme-color-blue;
+        border-radius: 25px;
+        background-color: $theme-color-white;
+        color: $theme-color-blue;
+        font-size: 18px;
+        font-weight: 800;
+        transition: 0.2s ease-out;
+    }
+
+    button.view-all:hover {
+        background-color: $theme-color-blue;
+        color: $theme-color-white;
+    }
+
+    button.view-all:active {
+        transform: translateY(-4px) scale(1);
+    }
+
+    img.dots-6 {
+        position: absolute;
+        top: 63px;
+        left: -37px;
+        z-index: -1;
+    }
+
+    img.vector-shape-2 {
+        position: absolute;
+        top: 50px;
+        right: -525px;
+        z-index: -1;
+    }
+}
